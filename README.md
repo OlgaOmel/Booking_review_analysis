@@ -3,8 +3,11 @@
 
 ДПО ВШЭ "Компьютерная лингвистика"
 
-Keywords: scraping, sentiment analysis, frequency, preprocessing, n-grams, clustering, tf-idf, language detection, wordcloud, visualisation.\
-Libraries: pandas, beautifulsoup, regex, urllib, requests, langdetect, flair, nltk, wordcloud, matplotlib, num2words, numpy, scikit-learn. 
+--------------
+
+Keywords: scraping, sentiment analysis, frequency, preprocessing, n-grams, clustering, tf-idf, language detection, wordcloud, visualisation.
+
+-------------
 
 Описание:\
 Данный проект направлен на практику навыков из цикла 1. Цель: собрать и проанализировать данные, используя полученные знания из курсов "Python" и "Компьютерная лингвистика". Данные для работы были взяты с сайта booking.com. 
@@ -14,6 +17,8 @@ Libraries: pandas, beautifulsoup, regex, urllib, requests, langdetect, flair, nl
 2. Отзывы: 5321.
 
 3. Заголовки отзывов: 2905.
+
+--------------
 
 Задачи проекта:
 
@@ -28,6 +33,12 @@ Libraries: pandas, beautifulsoup, regex, urllib, requests, langdetect, flair, nl
 
 4. Clustering\
 Результат: Предобработанные описания с тегом кластера, длиной текста, основным словом(cluster_data). Анализ 2 кластеров.
+
+------------
+
+Libraries: pandas, beautifulsoup, regex, urllib, requests, langdetect, flair, nltk, wordcloud, matplotlib, num2words, numpy, scikit-learn. 
+
+------------
 
 Пайплайн:
 1. Cсылки на все страницы с отелями по поисковому запросу с городом (Дублин) через offset (смещение).
