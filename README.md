@@ -1,7 +1,6 @@
-# Проект 1
-[Презентация](https://github.com/OlgaOmel/booking_project/files/10771870/default.pdf)
+# Project 1
 
-ДПО ВШЭ "Компьютерная лингвистика"
+HSE "Computational Linguistics"
 
 --------------
 
@@ -9,67 +8,24 @@ Keywords: scraping, sentiment analysis, frequency, preprocessing, n-grams, clust
 
 -------------
 
-## Описание:
-Данный проект направлен на практику навыков из цикла 1. Цель: собрать и проанализировать данные, используя полученные знания из курсов "Python" и "Компьютерная лингвистика". Данные для работы были взяты с сайта booking.com. 
-
-1. Ссылки, описания, названия: 419.
-
-2. Отзывы: 5321.
-
-3. Заголовки отзывов: 2905.
-
+## Description:
+The project is aimed to practice skills of the first Cycle. Data source: booking.com. 
 --------------
 
-## Задачи проекта:
+## Objectives:
 
 1. Scraping\
-Результат: Корпус с описаниями, ссылками и названиями 419 отелей(data). Корпус с заголовками отзывов(reviews_titles). Корпус с отзывами(reviews).
+Result: datasets: 1) hotel descriptions, links and titles (data); 2) titles (reviews_titles); 3) reviews (reviews).
 
 2. Sentiment analysis\
-Результат: Отзывы с тегами оценки(sentiment_analysis_results). Анализ количества положительных и отрицательных отзывов(sentiment_analysis_reviews).
+Result: Labelled reviews (sentiment_analysis_results). Quantity analysis of reviews (sentiment_analysis_reviews).
 
 3. N-grams\
-Результат: Частотные N-grams(Word_frequency).
+Result: N-grams (Word_frequency).
 
 4. Clustering\
-Результат: Предобработанные описания с тегом кластера, длиной текста, основным словом(cluster_data). Анализ 2 кластеров.
+Result: preprocessed labelled descriptions (cluster_data). Cluster analysis.
 
 ------------
 
 Libraries: pandas, beautifulsoup, regex, urllib, requests, langdetect, flair, nltk, wordcloud, matplotlib, num2words, numpy, scikit-learn. 
-
-------------
-
-## Пайплайн:
-1. Cсылки на все страницы с отелями по поисковому запросу с городом (Дублин) через offset (смещение).
-2. Cсылки и названия 419 отелей через bs.
-3. Описания для каждого отеля через bs.
-4. Получаем уникальные названия отелей для ссылки через регулярные выражения.
-5. Получаем ссылки на первую страницу отзывов для каждого отеля через offset.
-6. Получаем из каждой ссылки заголовки и отзывы через bs.
-7. Удаляем дубли.
-
----
-1. Определение языков отзывов.
-2. Подсчет количества отзывов на каждом языке.
-3. Выделение отзывов на английском языке.
-4. Анализ отзывов.
----
-1. Препроцессинг (нижний регистр, пунктуация, токенизация, стоп-слова, стемминг).
-2. Анализ n-grams.
-3. Облако слов.
----
-1. Препроцессинг (нижний регистр, пунктуация, цифры в слова, стоп-слова).
-2. TF-IDF.
-3. Кластеризация.
-4. Анализ характеристик кластеров (cамые частотные слова, объем кластера, средняя длина текста).
-5. Визуализация.
-
-## Cложности: 
-1. Долгая работа по сбору данных.
-2. Неудобная для html-парсинга динамическая страница. 
-
-Планы на будущее: 
-1. Генерация описания/отзыва.
-2. Саммаризация описаний.
-3. Адаптировать для Airbnb.
