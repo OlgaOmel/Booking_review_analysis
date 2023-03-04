@@ -10,8 +10,7 @@ Keywords: scraping, sentiment analysis, frequency, preprocessing, n-grams, clust
 
 ## Description:
 
-The project is aimed to practice skills of the first Cycle. Data source: booking.com. 
---------------
+The project is aimed to practice skills of Cycle 1. Data source: booking.com.  
 
 ## Objectives:
 
